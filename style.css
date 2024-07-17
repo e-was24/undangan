@@ -12,6 +12,10 @@ body {
      overflow-x: hidden;
 }
 
+.hero1 {
+  overflow-x: hidden;
+}
+
 .hero::before {
     content: '';
     position: absolute;
