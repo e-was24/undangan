@@ -21,8 +21,12 @@
 
     <!-- smply countdown -->
 
-    <link rel="stylesheet" href="./countdown/simplyCountdown.theme.default.css" />
-    <script src="./countdown/simplyCountdown.min.js"></script>
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+ 
+    <!-- bootstrap icon -->
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,7 +34,7 @@
 <body>
 
     <section id="hero"
-        class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        class="hero w-100 h-100 p-3  mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
             <h4>Kepada/ibu/bapak/suadara/i,</h4>
             <h1>Orang1 & Orang2</h1>
@@ -40,15 +44,90 @@
         </main>
     </section>
 
+    <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vino</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Vino</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#info">info</a>
+                        <a class="nav-link" href="#story">story</a>
+                        <a class="nav-link" href="#gallery">gallery</a>
+                        <a class="nav-link" href="#rsvp">RSVP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>Acara pernikahan</h2>
+                    <h3>diselenggarakan pada tanggal 24 november 2024, jawa tengah</h3>
+                    <p>oleh karna itu, kita bermaksud untuk mengundang bapak/ibu/saudara/i untuk hadir keacara
+                        pernikahan kami</p>
+                </div>
+            </div>
+
+            <div class="row cuple">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-8 text-end">
+                            <h3>Nama1</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora iste expedita et at
+                                distinctio quis possimus, blanditiis, ab necessitatibus, alias culpa a fuga eius
+                                similique autem corporis soluta. Molestias, error.</p>
+                            <p>putra dari bpk. lorem <br> dan <br> ibu ipsum</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/orang.png" alt="..." class="img-responsive rounded-circle">
+                        </div>
+                    </div>
+                </div>
+
+               <span class="heart"> <i class="bi bi-heart-fill"></i></span>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/orang.png" alt="..." class="img-responsive rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h3>Nama2</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora iste expedita et at
+                                distinctio quis possimus, blanditiis, ab necessitatibus, alias culpa a fuga eius
+                                similique autem corporis soluta. Molestias, error.</p>
+                            <p>putra dari bpk. lorem <br> dan <br> ibu ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
 
-        <script>
-            simplyCountdown('.simply-countdown', {
-                  
+    <script>
+        simplyCountdown('.simply-countdown', {
+
             year: 2024, // required
             month: 11, // required
             day: 24, // required
@@ -60,9 +139,10 @@
                 seconds: { singular: 'detik', plural: 'detik' }
             },
 
-         });
-         </script>
+        });
+    </script>
 
 
 </body>
+
 </html>
