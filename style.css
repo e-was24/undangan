@@ -11,14 +11,14 @@
        min-height: 2000px;
    }
    
-   .hero::before {
+ .hero::before {
        content: '';
        position: absolute;
        top: 0;
        left: 0;
        width: 100%;
        height: 100%;
-       background-image: url(img/img.jpeg);
+       background-image: url(img.jpeg);
        background-size: cover;
        background-position: center;
        z-index: -1;
